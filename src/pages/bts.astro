@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="BTS | Information" description="Information sur le BTS SIO">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Information sur le BTS SIO"
+				tagline="Découvrez le bts sio ainsi que les spécialitées qui l'accompagne !"
+			>
+			
+			</Hero>
+            <br>
+           
+
+			<section>
+				<h2 class="section-title">Diplôme</h2>
+				<div class="content">
+					<p> <h3>BTS (Brevet de Technicien Supérieur – Services Informatiques aux Organisations )</h3> <br>
+						
+                    <br>
+					<br>
+                    Le BTS Services Informatiques aux Organisations (sigle BTS SIO) est le résultat d’une rénovation en profondeur du BTS Informatique de Gestion (sigle BTS IG). Ce nouveau référentiel de BTS SIO mise en œuvre depuis Septembre 2020 remplace ainsi celui de Septembre 2011 (BTS IG).
+
+                    Le brevet de technicien supérieur Services Informatiques aux Organisations est un cursus d’études reconnu par l’État se déroulant sur deux ans (BAC+2) proposant deux spécialités bien distinctes : Le BTS SIO Option SISR et Option SLAM.
+					</p>
+					<br>
+						<br>
+					<p><h4>Pourquoi</h4> <br>
+						Si vous êtes passionné par l'informatique et que vous voulez en apprendre plus sur le réseau ou le développement, le BTS SIO est le diplôme qu'il vous faut. La première année ainsi que la deuxième année peuvent s'effectuer en initial ou en alternance, cela dépend de votre école.
+                        Un stage est obligatoire à la fin de la première année pour valider votre année et passer en deuxième année. Vous pourrez ensuite continuer sur votre lancée en vous spécialisant dans un cursus bien précis : SLAM ou SISR.
+					</p>
+                    <br>
+
+				    <br>
+					
+			
+				
+			</Hero>
+			
+				   
+		
+			<section>
+				<h2 class="section-title">Option</h2>
+				<div class="content">
+					<p> <h3>SLAM (Solutions Logicielles et Applications Métiers)</h3> <br>
+						<img
+						width="75%"
+						src="/assets/IMG_5058.JPG"
+						alt="Slam"
+					/>
+					<br>
+					<a href="https://aatn.fr/presentation-bts-sio/">Source</a>
+					<br>
+					<br>
+                    La spécialisation SLAM du BTS SIO vise à former des futurs développeurs avec la conception et le développement d’applications tout en ayant un œil également du côté de la cybersécurité.
+					</p>
+                    
+					<br>
+                    <br>
+					<p><h4>Pourquoi</h4> <br>
+                        L'option SLAM est idéale si vous êtes créatif et si vous aimez voir votre travail prendre forme petit à petit grâce à une motivation sans faille. Cette spécialité est faite pour vous, car il est vrai qu'en SLAM, il y a souvent des moments où l'on peut avoir mal au crâne à force de voir défiler des lignes de code toute la journée. Cependant, il n'y a rien de plus gratifiant dans cette spécialité que le rendu final de votre travail !					</p>
+					
+
+                    </Hero>
+			
+				   
+		
+                    <section>
+                        <h2 class="section-title">Option</h2>
+                        <div class="content">
+                            <p> <h3>SISR (Solutions d’Infrastructures, Systèmes et Réseaux)</h3> <br>
+                                <img
+                                width="75%"
+                                src="/assets/IMG_5059.JPG"
+                                alt="SISR"
+                            />
+                            <br>
+                            <a href="https://aatn.fr/presentation-bts-sio/">Source</a>
+                            <br>
+                            <br>
+                            La spécialisation SISR du BTS SIO vise à former des futurs Administrateurs Systèmes et Réseaux avec la conception, l’installation, la configuration, la gestion d’équipements réseaux et la maintenance de parcs informatiques, tout en ayant un œil du côté de la cybersécurité.
+                              
+                            <br>
+                            <br>
+                            <p><h4>Pourquoi</h4> <br>
+                                Le titulaire du diplôme participe à la production et à la fourniture de services en réalisant ou en adaptant des solutions d’infrastructures et en assurant le fonctionnement optimal des équipements.
+                            </p>
+                            
+		</main>
+						
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

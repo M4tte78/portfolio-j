@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-matteo-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "postbuild": "node ./postbuild.mjs -path https://github.com/M4tte78/Portfolio-Matteo-Astro",
+    "astro": "astro"
+    
+  },
+  "dependencies": {
+    "astro": "^2.6.6"
+    
+  }
+}
