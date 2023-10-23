@@ -4,20 +4,17 @@ import ThemeToggle from './ThemeToggle.astro';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Accueil', href: '/' },
-	{ label: 'Projets', href: '/work/' },
-	{ label: 'A propos', href: '/about/' },
-	{ label: 'Veille', href: '/veille/' },
-	{ label: 'BTS', href: '/bts/' },
-	{ label: 'Documentation', href: '/assets/Documentation bts sio Mattéo Bailly.pdf' },
+	{ label: 'Home', href: '/' },
+	{ label: 'Projects', href: '/work/' },
+	{ label: 'About me', href: '/about/' },
+	
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/M4tte78', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://www.twitch.tv/chuket__', icon: 'twitch-logo' },
-	{ label: 'GitHub', href: 'https://github.com/M4tte78', icon: 'github-logo' },
-	{ label: 'Linkedin', href: 'https://www.linkedin.com/in/matt%C3%A9o-bailly-521b4423b/', icon: 'linkedin-logo' },
+	
+	{ label: 'Linkedin', href: 'https://www.linkedin.com/in/jessie-bailly-b81985153/', icon: 'linkedin-logo' },
+	{ label: 'Instagram', href: 'https://www.instagram.com/stories/jessie_bailly/3219420079054370312/', icon: 'instagram-logo' },
 	
 ];
 ---
@@ -25,8 +22,8 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Bailly Mattéo
+			<Icon icon="trophy" color="var(--accent-regular)" size="1.6em" gradient />
+			Jessie Bailly
 		</a>
 		<menu-button>
 			<template>

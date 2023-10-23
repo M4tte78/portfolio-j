@@ -30,22 +30,18 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Bonjour, je m'appelle Bailly Mattéo, j'ai 19 ans"
-					tagline="Je suis Developper Fullstack chez Amundi."
+					title="Interior Designer Jessie Bailly"
+					tagline=" "
 					align="start"
 				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developper</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Gamer</Pill>
-						
-					</div>
+					
 				</Hero>
 
 				<img
 					alt="Bailly Mattéo"
 					width="480"
 					height="620"
-					src="/assets/IMG_0686.JPG"
+					src="/public/house.png"
 				/>
 			</header>
 
@@ -55,8 +51,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mes derniers projets</h3>
-					<p>Découvrez mes derniers projets réalisés avec mon école ainsi que mes projets en entreprise avec Amundi.</p>
+					<h3>My last project</h3>
+					<p>Discover my latest projects, drawings, plans, 3d & more</p>
 				</header>
 
 				<div class="gallery">
@@ -73,82 +69,13 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						Tout les projets
+						All projects
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Ecole</h3>
-					<p>
-						Je suis actuellement la formation de BTS SIO SLAM en 2ème année au sein de Ipssi SQY.
-					</p>
-					<br> <br>
-					<img
-					width="1553"
-					height="873"
-					src="/assets/IMG_0490.JPG"
-					alt="Bailly Mattéo lors de la photo de classe "
-				/>
-				</header>
-
-				<br>
-
-				
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Développement WEB', 'Script', 'Base de donées', 'Apprentissage'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-
-			 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Entreprise</h3>
-					<p>
-						C'est avec fierté que j'effectue mon alternance au sein d'Amundi Technologies.
-					</p>
-					<br> <br>
-					<img
-					width="1553"
-					height="873"
-					src="/assets/IMG_3030.JPG"
-					alt="Amundi "
-				/>
-				<div class="cta">
-					<CallToAction href="/work">
-						Découvrir Amundi
-						<Icon icon="arrow-right" size="1.2em" />
-					</CallToAction>
-				</div>
-				</header>
-
-				<br>
-
-				
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							[ 'Dev / Script', 'Réseau',].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
+			
 		</main>
 
 		<ContactCTA />

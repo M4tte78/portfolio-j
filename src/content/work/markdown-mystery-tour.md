@@ -1,7 +1,7 @@
 ---
-title: Stage
+title: Exemple
 publishDate: 2023-06-17 00:00:00
-img: /assets/IMG_7070.JPG
+img: /assets/stock-4.jpg
 img_alt: Amundi
 description: |
   Stage de fin d'année au sein d'Amundi 

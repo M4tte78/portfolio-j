@@ -1,8 +1,8 @@
 ---
 
-title: AMUNDI
+title: Exemple
 publishDate: 0000-00-00 00:00:00
-img: /assets/IMG_3030.JPG
+img: /assets/stock-1.jpg
 img_alt: Amundi
 description: |
   Amundi, premier gérant d’actifs européen
